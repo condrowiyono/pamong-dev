@@ -1,0 +1,92 @@
+---
+// Hero Section Component
+---
+
+<section class="relative py-20 lg:py-32 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
+  <!-- Background accent -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+  </div>
+
+  <div class="container-wrapper relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Content -->
+      <div class="flex flex-col gap-6 animate-fade-in">
+        <!-- Javanese Script -->
+        <div class="inline-block w-fit">
+          <div class="text-6xl lg:text-7xl text-blue-600 font-light mb-2">ꦥꦩꦺꦴꦁ</div>
+          <p class="text-sm text-gray-500 font-mono">{'{'}Friendly Tech Partner{'}'}</p>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          Making <span class="text-blue-600">Impossible</span> Possible
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-lg text-gray-600 leading-relaxed max-w-lg">
+          End-to-end development for your digital vision. Full Stack, Mobile, or Design—we bring your ideas to life with expertise and care.
+        </p>
+
+        <!-- Trust Badges -->
+        <div class="flex flex-col gap-3 pt-4">
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-700">Trusted by startups and enterprises</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-700">End-to-end project ownership</span>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a href="#contact" class="btn-primary">
+            Get In Touch
+          </a>
+          <a href="#services" class="btn-secondary">
+            Explore Services →
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Visual -->
+      <div class="hidden lg:block relative">
+        <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-1 shadow-2xl">
+          <div class="bg-white rounded-xl p-8 flex flex-col items-center justify-center gap-4 h-96">
+            <div class="text-5xl">🚀</div>
+            <p class="text-center text-gray-600 font-medium">Ready to build something amazing?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>

@@ -1,0 +1,67 @@
+---
+// Header Navigation Component
+---
+
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+  <div class="container-wrapper">
+    <nav class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <a href="#" class="flex flex-col gap-0">
+          <div class="text-2xl font-bold font-mono text-gray-900">
+            {'{pamong}'}.dev
+          </div>
+          <div class="text-lg text-blue-600 leading-none">ꦥꦩꦺꦴꦁ</div>
+        </a>
+      </div>
+
+      <!-- Nav Links (Desktop) -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+          Services
+        </a>
+        <a href="#process" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+          Process
+        </a>
+        <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+          Portfolio
+        </a>
+        <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+          FAQ
+        </a>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="btn-primary hidden sm:inline-flex">
+        Get In Touch
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden p-2" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden pb-4" id="mobile-menu">
+      <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Services</a>
+      <a href="#process" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Process</a>
+      <a href="#portfolio" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Portfolio</a>
+      <a href="#faq" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">FAQ</a>
+      <a href="#contact" class="btn-primary mt-4 block text-center">Get In Touch</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
