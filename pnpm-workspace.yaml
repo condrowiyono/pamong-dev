@@ -4,5 +4,14 @@ packages:
 allowBuilds:
   esbuild: true
   sharp: true
+  workerd: true
 minimumReleaseAgeExclude:
   - astro@6.4.6
+  - '@cloudflare/workerd-darwin-64@1.20260611.1'
+  - '@cloudflare/workerd-darwin-arm64@1.20260611.1'
+  - '@cloudflare/workerd-linux-64@1.20260611.1'
+  - '@cloudflare/workerd-linux-arm64@1.20260611.1'
+  - '@cloudflare/workerd-windows-64@1.20260611.1'
+  - miniflare@4.20260611.0
+  - workerd@1.20260611.1
+  - wrangler@4.100.0
